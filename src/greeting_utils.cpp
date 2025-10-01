@@ -10,12 +10,9 @@ namespace GreetingUtils{
 		int array_length = msg.size()+1;
 		char* p = new char[array_length];
 		for(int i=0; i<array_length; i++){
-			if(i==array_length-1){
-				p[i] = '\0';
-				continue;
-			}
 			p[i] = msg[i];
 		}
+		p[array_length] = '\0';
 		return p;
 	}
 }
